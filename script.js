@@ -15,24 +15,23 @@ function Calculate(){
 }
 
 function validate() {
-  var genders = document.getElementsByName("gender"); // gender element declaration
-  if(month.value == "" || month.value.length != 2 || month.value > 12  || month.value <= 0){
-     alert( "Please provide your month of birth! between 1 and 12" );
+  let MM = (month.value);
+  let DD = (dates.value);
+    if( MM == "" || isNaN(MM) || 
+    MM.length > 2 || MM.value > 12  || MM.value <= 0){
+       alert( "Please provide a valid month!" );
+       MM.focus() ;
+       return false;
+    }
+    else if(DD == "" || isNaN(DD) || 
+    DD.length > 2|| DD.value > 31 || DD.value <= 0) {
+     alert( "Please provide a valid date!" );
+     DD.focus() ;
      return false;
-  }
-  else if(dates.value == "" || month.value.length != 2|| dates.value > 31 || dates.value <= 0) {
-     alert( "Please provide a valid date that you were born in!" );
-    
-     return false;
-  }
-  else if(genders[0].checked==false && genders[1].checked==false ) {
-      alert("You must select male or female");
-      return false;
-  }   
-  else{
-    return true ;
-  }
-  
+    }
+    else{
+        return true ;
+      }
 }
 function getGender(){
     let index = Calculate();
@@ -60,13 +59,12 @@ function getGender(){
       
         alert("You were born on "+ days[index] + " and Your akan name is " + femaleAkanNames[index]+"!");
       
-    
     break;
-          
+    
   }
 
 }
 function findName(){
-
+    validate();
     getGender();
   }
