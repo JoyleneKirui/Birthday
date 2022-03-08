@@ -16,9 +16,8 @@
 
 ## Installation 
 Open Terminal 
-
 Clone this repository to a location in your file system. ```git clone https://github.com/JoyleneKirui/Birthday.git```
-Open terminal command line then navigate to the root folder of the application```cd Birthday```
+Open terminal command line then navigate to the root folder of the application.```cd Birthday```
 Open index.html in your browser.
 
 ## Technologies Used 
