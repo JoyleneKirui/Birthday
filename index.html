@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    I was born on Tuesday
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akan Names</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Akan Names</h1>
+        <p>Akan names are derived from Ghanaian culture.<br> Frequently in Ghana, children are given their first name as a <i>day name</i><br> which corresponds to the day in the week they were born.</p>
+        <form>
+            Day:
+            <input type="number"" id="day" placeholder="day">
+            Month:
+            <input type="number"name="" id="Month" placeholder="Month">
+            Year:
+            <input type="number" min="1900" max="2023" step="1" id="Year" value="2000" />
+            <br>
+            Gender: 
+            <input type="radio" name="mygender" id="male" value="Male">Male 
+            <input type="radio" name="mygender" id="Female" value="Female">Female <br>
+            <button type="submit" onclick="getAkanName()" class="getAkan" id="buttn">Get Akan Name</button>
+        </form>
+        <hr>
+        <div class="your-akan-name">
+            <p id="message" class="output"></p>
+        </div>
+        <script src="script.js"></script> 
+    </body>
 </html>
