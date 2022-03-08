@@ -5,8 +5,10 @@
 + [Description](#Description)
 + [Installation](#Installation)
 + [Technologies Used](#Technologies-Used)
++ [Behaviour Driven Development](#Behaviour-Driven-Development)
 + [Known Bugs](#Known-Bugs)
-+ [Contributors](#Contributors)
++ [Authors](#Authors)
++ [Authors Info](#Authors-Info)
 + [License](#License)
 
 ## Description
