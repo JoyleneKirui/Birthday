@@ -56,7 +56,7 @@ Link to Live Site :[https://JoyleneKirui.github.io/Birthday/](https://JoyleneKir
 
 OPEN SOURCE
 
-Copyright (c) 2022 # **Joylene Kirui
+Copyright (c) 2022 **Joylene Kirui**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
