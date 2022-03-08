@@ -15,24 +15,25 @@ function Calculate(){
 }
 
 function validate() {
-    var genders = document.getElementsByName("gender"); // gender element declaration
-    if (month.value > 12  || month.value <= 0){
-       alert( "Please provide your month of birth! between 1 and 12" );
-    }
-    else if(dates.value.length >31|| dates.value <= 0) {
-       alert( "Please provide a valid date that you were born in!" );
-       document.myForm.day.focus() ;
-       return false;
-    }
-    else if(genders[0].checked==false && genders[1].checked==false ) {
-        alert("You must select male or female");
-        return false;
-    }   
-    else{
-      return true ;
-    }
-    
+  var genders = document.getElementsByName("gender"); // gender element declaration
+  if(month.value == "" || month.value.length != 2 || month.value > 12  || month.value <= 0){
+     alert( "Please provide your month of birth! between 1 and 12" );
+     return false;
   }
+  else if(dates.value == "" || month.value.length != 2|| dates.value > 31 || dates.value <= 0) {
+     alert( "Please provide a valid date that you were born in!" );
+    
+     return false;
+  }
+  else if(genders[0].checked==false && genders[1].checked==false ) {
+      alert("You must select male or female");
+      return false;
+  }   
+  else{
+    return true ;
+  }
+  
+}
 function getGender(){
     let index = Calculate();
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
