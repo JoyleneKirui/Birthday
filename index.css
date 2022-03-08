@@ -26,7 +26,7 @@ form{
     padding: 20px;
 }
 body {   
-    background: linear-gradient(rgba(10, 1, 1, 0.76), rgba(0, 0, 0, 0.61)), url('/images/akan.webp');
+    background: linear-gradient(rgba(10, 1, 1, 0.76), rgba(0, 0, 0, 0.61)), url(images/akan.webp);
     background-size: cover;
     color: white;
 }
