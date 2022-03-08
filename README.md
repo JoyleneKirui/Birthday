@@ -22,9 +22,9 @@ Open terminal command line then navigate to the root folder of the application``
 Open index.html in your browser.
 
 ## Technologies Used 
-*HTML
-*Javascript
-*CSS 
+* HTML
+* Javascript
+* CSS 
 ## Behaviour Driven Development
 1. Displays Form For Entering Date and Gender
 INPUT: "User's birth date Entered"
@@ -56,7 +56,7 @@ Link to Live Site :[https://JoyleneKirui.github.io/Birthday/](https://JoyleneKir
 
 OPEN SOURCE
 
-Copyright (c) [2022] [Joylene Kirui]
+Copyright (c) 2022 # **Joylene Kirui
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
