@@ -19,33 +19,35 @@ function Calculate(){
 function validate() {
   let MM = (month.value);
   let DD = (dates.value);
-    if(DD == "" || isNaN(DD) || 
-    DD.length > 2|| DD > 31 || DD <= 0) {
-    alert( "Please provide a valid date!" );
-    DD.focus() ;
+  if(DD == "" || isNaN(DD) || 
+  DD.length > 2|| DD > 31 || DD <= 0) {
+  alert( "Please provide a valid date!" );
+  DD.focus() ;
+  return false;
+  }
+  else  if( MM == "" || isNaN(MM) || MM.length > 2 || MM > 12  || MM <= 0){
+    alert( "Please provide a valid month!" );
+    MM.focus() ;
     return false;
-    }
-    else  if( MM == "" || isNaN(MM) || MM.length > 2 || MM > 12  || MM <= 0){
-      alert( "Please provide a valid month!" );
-      MM.focus() ;
-      return false;
-    }
-    else{
-        return true ;
-      }
+  }
+  else{
+    return true ;
+    
+  }
 }
 function getGender(){
     let index = Calculate();
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     let femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-    var genders = document.getElementsByName("gender");
-    if(genders[0].checked == true){
+    var mygender = document.getElementsByName("gender");
+    if(mygender[0].checked == true){
       var gender = "male";
     }
-    else if(genders[1].checked == true){
+    else if(mygender[1].checked == true){
       var gender = "female";
     }
+    
     else{
       return false;
     }
