@@ -21,20 +21,25 @@ p{
 form{
     margin-top: 3%;
     text-align: center;
-    background-color: rgb(2, 14, 2);
+    background-color: rgb(2, 14, 2, 0.3);
+    color: white;
     padding: 20px;
 }
-body{
-    background-color: rgb(2, 12, 2);
-    color: white
+body {   
+    background: linear-gradient(rgba(10, 1, 1, 0.76), rgba(0, 0, 0, 0.61)), url('/images/akan.webp');
+    background-size: cover;
+    color: white;
 }
 
 button{
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #FCD116;
     border-style: none;
     border-radius: 2px;
     color: rgb(2, 12, 2);
     height: 30px;
 
+}
+.copyright{
+    margin-top: 140px;
 }
