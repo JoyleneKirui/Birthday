@@ -5,29 +5,30 @@
    
     
 function Calculate(){
-    let CC = (year.value.slice(0, 2));
-    let YY = (year.value.substring(2));
-    let MM = (month.value);
-    let DD = (dates.value);
-    let d = Math.floor(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7)
+    let CC = parseInt(year.value.substring(0, 2));
+    let YY = parseInt(year.value.substring(2));
+    let MM = parseInt(month.value);
+    let DD = parseInt(dates.value);
+    let d = Math.floor(( ( (CC / 4) - (2 * CC) - 1) + (5 * YY / 4) + (26 * (MM + 1) / 10) + DD ) % 7);
+    
     return d;
+    
     
 }
 
 function validate() {
   let MM = (month.value);
   let DD = (dates.value);
-    if( MM == "" || isNaN(MM) || 
-    MM.length > 2 || MM.value > 12  || MM.value <= 0){
-       alert( "Please provide a valid month!" );
-       MM.focus() ;
-       return false;
+    if(DD == "" || isNaN(DD) || 
+    DD.length > 2|| DD > 31 || DD <= 0) {
+    alert( "Please provide a valid date!" );
+    DD.focus() ;
+    return false;
     }
-    else if(DD == "" || isNaN(DD) || 
-    DD.length > 2|| DD.value > 31 || DD.value <= 0) {
-     alert( "Please provide a valid date!" );
-     DD.focus() ;
-     return false;
+    else  if( MM == "" || isNaN(MM) || MM.length > 2 || MM > 12  || MM <= 0){
+      alert( "Please provide a valid month!" );
+      MM.focus() ;
+      return false;
     }
     else{
         return true ;
