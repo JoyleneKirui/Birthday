@@ -17,20 +17,38 @@
 ## Installation 
 Open Terminal 
 
-git clone https://github.com/JoyleneKirui/Birthday.git
-
-To access the site, open your browser and put in the link URL.
+Clone this repository to a location in your file system. ```git clone https://github.com/JoyleneKirui/Birthday.git```
+Open terminal command line then navigate to the root folder of the application```cd Birthday```
+Open index.html in your browser.
 
 ## Technologies Used 
-HTML
-javascript
-CSS 
+*HTML
+*Javascript
+*CSS 
+## Behaviour Driven Development
+1. Displays Form For Entering Date and Gender
+INPUT: "User's birth date Entered"
+INPUT: "User's birth month Entered"
+INPUT: "User's year of birth Entered"
+INPUT: "User's Gender Entered"
+OUTPUT: "Displays User's Akan Name According to Submitted Date and Gender"
+2. Displays an Error Message if Day or Month Input is invalid
+INPUT: ""
+OUTPUT: "Displays Error Message"
 
 ## Known Bugs
 There are no known bugs 
 
-## Contributors
+## Authors
 Joylene Chepkoech Kirui
+
+## Authors Info 
+
+LinkedIn - [Joylene Kirui](www.linkedin.com/in/joylene-kirui-860699176)
+
+## Live Link
+
+Link to Live Site :[https://JoyleneKirui.github.io/Birthday/](https://JoyleneKirui.github.io/Birthday/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
